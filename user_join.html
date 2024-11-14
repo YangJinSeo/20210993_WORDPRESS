@@ -1,0 +1,35 @@
+<!doctype html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+    <title>구글 회원 가입</title>
+    <head>
+        <meta name="author" content="학번">
+		<meta charset="utf-8">
+		<meta name="keywords" content="computer">
+		<base href="https://g--cgiqb.run.goorm.io/20210993_/">
+		<script src="JS/user_join.js"></script>
+		<script src="JS/session_storage2.js"></script>
+    </head>
+    <body>
+		<br><br><br><br>
+		<p style="text-align:center"><img src="img/google.png" alt="구글이미지" ></p>
+		<p style="text-align:center"><b><font size="9em" color="green">Google 계정 만들기</font></b></p>
+    
+	<div style="text-align:center">
+	<form action="index.html" id="form_send" method="post" onsubmit="return join_check()">
+		<input type="text" id="item" name="family" size="20" placeholder="성">
+		<input type="text" id="item" name="name" size="20" placeholder="이름"><br>
+		<input type="email" id="js_userid" name="id" size="40" placeholder="이메일@.com"><br>
+		<font size="4em" color="green">문자, 숫자, 마침표를 사용할 수 있습니다.</font>
+		<br><br>
+		<input type="password" id="js_password0" name="pw" placeholder="비밀번호">
+		<input type="password" id="js_password1" name="pw" placeholder="확인"><br>
+		<font size="4em" color="green">문자, 숫자, 기호를 조합하여 8자 이상을 사용하세요.</font>
+		<br><br>
+		<input type="submit" value="회원가입" onclick="session_save()">
+		<input type="reset" value="재입력">
+	</form>
+	</div>
+	
+	</body>
+</html>

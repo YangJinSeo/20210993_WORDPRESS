@@ -1,0 +1,71 @@
+<!doctype html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+    <title>구글 메인화면 예제</title>
+    <head>
+        <meta name="author" content="학번">
+		<meta charset="utf-8">
+		<meta name="keywords" content="computer">
+		<base href="https://g--cgiqb.run.goorm.io/20210993_/">
+		<script src="JS/over.js"></script>
+		<script src="JS/test.js"></script>
+		<script src="JS/cookie.js"></script>
+		<script src="JS/local_storage.js"></script>
+		<style>.ulist{list-style:none;}</style>
+		<script src="JS/local_storage2.js" defer></script>
+		<script src="JS/Key_log.js" defer></script>
+    </head>
+    <body onContextMenu="return false" onSelectStart="return false" onDragStart="return false" onload="checkCookieTest()">
+		<p style="text-align">
+        <b>
+            <font size="4em" color="green">문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의</font>
+        </b>
+        </p>
+		<p style="text-align:right">
+			<button type="button" style="WIDTH:120pt;HEIGHT:60pt;COLOR:WHITE;background-color:BLUE"
+					onclick="window.open('login.html');"><b><font size="5em">로그인</font></b></button>
+			<button type="button" style="WIDTH:120pt;HEIGHT:60pt;COLOR:WHITE;background-color:BLACK"
+			onclick="window.open('user_join.html');"><b><font size="5em">회원가입</font></b></button></p>
+        <br>
+        <hr>
+        <p style="text-align:center"><a href="index.html" target="_blank"><img src="img/google2.png" alt="구글이미지" 
+		onmouseover="over(this)" onmouseout="out(this)"></a></p>
+        <br>
+        <p style="text-align:center">검색:
+            <input type="text" id="local" name="search" size="55" value="">
+			<button type="button" onclick="popup();local_save()">검색</button>
+			<button type="button" onclick="local_get();">최근 입력한 검색어 확인</button><br>
+		</p>
+		<div class="small-container" style="text-align:center;">
+			<form>
+			 검색: <input id="item" type="text" size="55" placeholder="New"><button type="button" onclick="popup();">검색</button>
+			</form>
+			<ul class="ulist"></ul>
+		</div>
+        <br><br><br>
+		<div oncopy="alert('절대 카피는 안됩니다.복사 기능 반대!');return false">
+			
+		<table style="margin-left:auto;margin-right:auto;"border="1" width="500">
+			<caption>인기 검색어</caption>
+			<tbody>
+			<tr><td bgcolor="green"width="50"><b>영화</b></td><td width="80"bgcolor="blue">아저씨</td><td width="80"bgcolor="blue">아저씨</td>
+				<td width="100">어머니</td><td width="100">헬머니</td><td>할부지</td></tr>
+			<tr bgcolor="red"><td width="50">음악</td><td>KPOP</td><td>JPOP</td><td>ROCK1</td><td>ROCK2</td><td rowspan="2">EUROBEAT</td></tr>
+				<tr bgcolor="red"><td colspan="2" width="50">게임</td><td>LOL</td><td>WOW</td><td>SUDDEN</td></tr>
+			</tbody>
+			</table>
+		</div>
+		<br><br><br>
+		<script>
+			document.write("<h3>자바스크립트 테스트(정렬x)</h3>");
+			document.write("2+5는 <br>");
+			document.write(2 * 5 +"<br>");
+			document.write("<mark>7입니다.</mark>");
+		</script>
+        <hr>
+        <p style="text-align:right">
+            <font size="3em" color="red">문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, <a href="media.html" target="_blank">동영상</a> 등</font>
+        </p>
+
+    </body>
+</html>

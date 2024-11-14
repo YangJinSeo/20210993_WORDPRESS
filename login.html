@@ -1,0 +1,47 @@
+<!doctype html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+    <title>구글 로그인</title>
+    <head>
+        <meta name="author" content="학번">
+		<meta charset="utf-8">
+		<meta name="keywords" content="computer">
+		<base href="https://g--cgiqb.run.goorm.io/20210993_/">
+		<script src="JS/input.js"></script>
+		<script src="JS/cookie.js"></script>
+		<script src="JS/session_storage1.js"></script>
+    </head>
+    <body>
+		<p style="text-align">
+        <b>
+            <font size="4em" color="green">문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의</font>
+        </b>
+        </p>
+        <br>
+        <hr>
+        <p style="text-align:center"><a href="index.html" target="_blank"><img src="img/google.png" alt="구글이미지" 
+		onmouseover="over(this)" onmouseout="out(this)"></a>
+		<br><br>
+		<b>
+			<font size="6em" color="green">구글 계정으로 로그인</font>
+		</b>
+		<br><br>
+		</p>
+		
+		<div style="text-align:center">
+		<form action="index_main.html" id="form_send">
+			<label for="user_id">GOOGLE ID:</label>
+			<input type="email" id="js_userid2" name="id" value="아이디 입력"><br>
+			<label for="user_pass">PASSWORD:</label>
+			<input type="password" id="js_password2" name="pw" value="패스워드 입력"><br><br>
+			<input type="submit" value="로그인 - GET방식" onclick="session_save()">
+			<input type="reset">
+		</form>
+		</div>
+        <br><br><br><br><br>
+        <hr>
+        <p style="text-align:right">
+            <font size="3em" color="red">문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등</font>
+        </p>
+    </body>
+</html>
